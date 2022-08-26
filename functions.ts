@@ -5,11 +5,11 @@ export class Translate {
     private readonly base: string
 
     constructor() {
-        const {XRapidAPIKey, XRapidAPIHost} = configSync()
+        const {XRapidAPIKey} = configSync()
         this.base = 'https://microsoft-translator-text.p.rapidapi.com'
         this.headers = {
             'X-RapidAPI-Key': XRapidAPIKey,
-            'X-RapidAPI-Host': XRapidAPIHost
+            'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
         }
     }
 
